@@ -1,4 +1,4 @@
-IpythonNotebook
+Collection of some codes
 ===============
 
-Test Notbook
+Using Ipython notbook to archive and easily find my code. :-)
