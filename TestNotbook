@@ -1,0 +1,43 @@
+{
+ "metadata": {
+  "name": "TestNotebook"
+ },
+ "nbformat": 3,
+ "nbformat_minor": 0,
+ "worksheets": [
+  {
+   "cells": [
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": "from IPython import parallel\nrc = parallel.Client()\n",
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "ename": "IOError",
+       "evalue": "Connection file not found: u'/home/chraibi/.config/ipython/profile_default/security/ipcontroller-client.json'",
+       "output_type": "pyerr",
+       "traceback": [
+        "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mIOError\u001b[0m                                   Traceback (most recent call last)",
+        "\u001b[0;32m<ipython-input-4-6c9a214f45ce>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mIPython\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mparallel\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0mrc\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mparallel\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mClient\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+        "\u001b[0;32m/usr/lib/python2.7/dist-packages/IPython/parallel/client/client.pyc\u001b[0m in \u001b[0;36m__init__\u001b[0;34m(self, url_or_file, profile, profile_dir, ipython_dir, context, debug, exec_key, sshserver, sshkey, password, paramiko, timeout, **extra_args)\u001b[0m\n\u001b[1;32m    409\u001b[0m                     \u001b[0murl_or_file\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mos\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpath\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mjoin\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_cd\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msecurity_dir\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0murl_or_file\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    410\u001b[0m                 \u001b[0;32mif\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0mos\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpath\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mexists\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0murl_or_file\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 411\u001b[0;31m                     \u001b[0;32mraise\u001b[0m \u001b[0mIOError\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Connection file not found: %r\"\u001b[0m \u001b[0;34m%\u001b[0m \u001b[0murl_or_file\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    412\u001b[0m             \u001b[0;32mwith\u001b[0m \u001b[0mopen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0murl_or_file\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mf\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    413\u001b[0m                 \u001b[0mcfg\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mjson\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mloads\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mf\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mread\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+        "\u001b[0;31mIOError\u001b[0m: Connection file not found: u'/home/chraibi/.config/ipython/profile_default/security/ipcontroller-client.json'"
+       ]
+      }
+     ],
+     "prompt_number": 4
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": "",
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    }
+   ],
+   "metadata": {}
+  }
+ ]
+}
